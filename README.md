@@ -49,13 +49,15 @@ https://user-images.githubusercontent.com/75214477/196149937-353e3685-fc65-432a-
 
 ## Tech Stack
 
-**State management:** [get](https://pub.dev/packages/get)
+**State management:**
+
+* [get](https://pub.dev/packages/get)
 
 **For Ui:** 
 
-[persistent_bottom_nav_bar](https://pub.dev/packages/persistent_bottom_nav_bar)
+* [persistent_bottom_nav_bar](https://pub.dev/packages/persistent_bottom_nav_bar)
 
-[google_fonts](https://pub.dev/packages/google_fonts)
+* [google_fonts](https://pub.dev/packages/google_fonts)
 
 
 **Project structure:** MVC
