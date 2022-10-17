@@ -1,5 +1,6 @@
 import 'package:demo_app/screens/Viewer/viewer.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +11,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Flutter Demo',
-      home: Viewer(),
+    return GetMaterialApp(
+      title: 'SeezItt',
+      debugShowCheckedModeBanner: false,
+      initialRoute: Viewer.routeName,
+      getPages: _getRoutes,
     );
+  }
+
+  List<GetPage> get _getRoutes {
+    return [
+      GetPage(name: Viewer.routeName, page: () => const Viewer()),
+    ];
   }
 }

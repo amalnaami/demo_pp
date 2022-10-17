@@ -16,7 +16,6 @@ class DealsDay extends StatefulWidget {
 
 class _DealsDayState extends State<DealsDay> {
   final GroceryController groceryController = Get.find();
-  final double _containerSize = 70.0;
 
   final double _containerRadius = 15.0;
 
@@ -102,19 +101,19 @@ class _DealsDayState extends State<DealsDay> {
   Widget _addToFav() {
     return InkWell(
       onTap: onTap(),
-      child: CircleAvatar(
-        radius: 15,
-        backgroundColor: ColorsFactory.bottomAppBar,
-        child: Icon(
-          widget.favoriteModel.isSelect.value
-              ? Icons.favorite
-              : Icons.favorite_border_rounded,
-          size: 16,
-          color: widget.favoriteModel.isSelect.value
-              ? ColorsFactory.activeBottomTab
-              : ColorsFactory.disActiveBottomTab,
-        ),
-      ),
+      child: Obx(() => CircleAvatar(
+            radius: 15,
+            backgroundColor: ColorsFactory.bottomAppBar,
+            child: Icon(
+              widget.favoriteModel.isSelect.value
+                  ? Icons.favorite
+                  : Icons.favorite_border_rounded,
+              size: 16,
+              color: widget.favoriteModel.isSelect.value
+                  ? ColorsFactory.activeBottomTab
+                  : ColorsFactory.disActiveBottomTab,
+            ),
+          )),
     );
   }
 

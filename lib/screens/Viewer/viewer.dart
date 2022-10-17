@@ -7,6 +7,8 @@ import 'package:get/get.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class Viewer extends StatefulWidget {
+  static const routeName = '/Viewer';
+
   const Viewer({Key? key}) : super(key: key);
 
   @override
