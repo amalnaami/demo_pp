@@ -10,7 +10,7 @@
 ## Task Explanation
 
 Demo Flutter App that consists of 4 screens:
-## Home, News, Favorite, Cart screen
+### Home, News, Favorite, Cart screen
   #### HOME SCREEN:
   * User can add to his Favorite by click ( :heart: ) and remove by another click on it (Deals pf the day part).
   * User can add to his Cart by click ( :shopping_cart: ) and remove by another click on it (Demo Products part).
@@ -38,6 +38,8 @@ Demo Flutter App that consists of 4 screens:
 ```bash
   flutter run
 ```
+
+
 
 
 https://user-images.githubusercontent.com/75214477/196149937-353e3685-fc65-432a-96fa-342e8bf81e3c.mp4
